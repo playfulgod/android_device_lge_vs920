@@ -28,7 +28,6 @@ BOARD_USES_MMCUTILS := true
 
 TARGET_PREBUILT_KERNEL := device/lge/vs920/kernel
 BOARD_TOUCH_RECOVERY := true
-#TARGET_RECOVERY_INITRC := device/lge/ms695/recovery/recovery.rc
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/vs920/recovery/graphics.c
 
 # UMS
