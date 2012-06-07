@@ -4,15 +4,16 @@ USE_CAMERA_STUB := true
 -include vendor/lge/spectrum/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-
 TARGET_BOARD_PLATFORM := msm8660
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
-
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
+
 ARCH_ARM_HAVE_TLS_REGISTER := true
+
 TARGET_CPU_SMP := true
+
 TARGET_BOOTLOADER_BOARD_NAME := spectrum
 
 TARGET_NO_RADIOIMAGE := true
@@ -23,13 +24,12 @@ TARGET_USE_SCORPION_PLD_SET := true
 TARGET_SCORPION_BIONIC_PLDOFFS := 6
 TARGET_SCORPION_BIONIC_PLDSIZE := 128
 
-BOARD_KERNEL_CMDLINE := vmalloc=450M,console=ttyDCC0,115200,n8 androidboot.hardware=iprj
+BOARD_KERNEL_CMDLINE := vmalloc=450M,console=ttyDCC0,115200,n8 androidboot.hardware=qcom
 BOARD_KERNEL_BASE := 0x40200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_FORCE_RAMDISK_ADDRESS := 0x41a00000
 
 # Try to build the kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_iprj_defconfig
+# TARGET_KERNEL_CONFIG := cyanogenmod_iprj_defconfig
 # Keep this as a fallback
 TARGET_PREBUILT_KERNEL := device/lge/spectrum/kernel
 
@@ -43,6 +43,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_TOUCH_RECOVERY := true
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/spectrum/recovery-gfx.c
 TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_USES_MMCUTILS := true
 
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DUSES_AUDIO_LEGACY -DQCOM_ROTATOR_KERNEL_FORMATS
 

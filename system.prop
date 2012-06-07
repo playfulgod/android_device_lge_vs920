@@ -1,20 +1,47 @@
 #
-# system.prop for p930
+# system.prop forvs920
 #
+
 ro.sf.lcd_density=320
+
 
 ## Radio
 mobiledata.interfaces=rmnet_sdio0,rmnet_sdio1
 rild.libpath=/system/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
-#ril.subscription.types=NV,RUIM
+ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
-ro.telephony.default_network=9
+ro.telephony.default_network=8
 ro.telephony.ril_class=LGEQualcommUiccRIL
 ro.telephony.ril.v3=qcomuiccstack
-telephony.lteOnGsmDevice=1
+telephony.lteOnCDMADevice=1
+gsm.version.baseband=APQ8060/MDM9200
+ro.ril.transmitpower=true
 
+
+
+## Wifi
+wlan.chip.vendor=brcm
+wlan.chip.version=bcm4330x
+wifi.supplicant_scan_interval=20
 wifi.interface=wlan0
+
+
+gsm.version.baseband=APQ8060/MDM9200
+
+## audio
+persist.audio.handset.mic=digital
+
+## system prpo for sound exeption
+## seunghak.han@lge.com
+ro.lge.sound.case.exception=true
+
+## EAS Data encryption for VZW
+persist.sys.email.crypt=0
+persist.sys.email.crypt_ext=0
+persist.sys.email.crypt_mnt=0
+
+## Misc
 debug.fb.rgb565=0
 debug.sf.hw=1
 debug.enabletr=true
@@ -23,15 +50,27 @@ ro.opengles.version=131072
 com.qc.hardware=true
 ro.sf.compbypass.enable=0
 
+persist.gps.qmienabled=true
+persist.service.main.enable=0
+persist.service.system.enable=0
+persist.service.radio.enable=0
+persist.service.events.enable=0
+
 ro.hdmi.enable=true
 com.qc.hdmi_out=true
 
 ro.bt.bdaddr_path=/data/misc/bd_addr
 
-ro.product.camera=lgp930
+ro.product.camera=lgvs920
 
-# QCOM CpuGovernorService
+ro.use_data_netmgrd=true
+persist.data_netmgrd_mtu=1428
+ro.emmc.sdcard.partition=17
+ro.qualcomm.bluetooth.dun=true
+ro.qualcomm.bluetooth.ftp=true
+
+## QCOM CpuGovernorService
 dev.pm.dyn_samplingrate=1
 
-# system prop for sending power off request to RIL during phone shutdown
+## system prop for sending power off request to RIL during phone shutdown
 ro.ril.shutdown=true
