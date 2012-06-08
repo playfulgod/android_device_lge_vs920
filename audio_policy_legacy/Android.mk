@@ -18,7 +18,7 @@ ifeq ($(BOARD_HAVE_BLUETOOTH),true)
 endif
 
 LOCAL_STATIC_LIBRARIES := libmedia_helper
-LOCAL_MODULE := libaudiopolicy_p930
+LOCAL_MODULE := libaudiopolicy_spectrum
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_STATIC_LIBRARY)
@@ -39,7 +39,7 @@ LOCAL_STATIC_LIBRARIES := \
     libmedia_helper
 
 LOCAL_WHOLE_STATIC_LIBRARIES := \
-    libaudiopolicy_p930
+    libaudiopolicy_spectrum
 
 ## Should be p930, but that conflicts with the CM policy wrapper
 LOCAL_MODULE := audio_policy.msm8660

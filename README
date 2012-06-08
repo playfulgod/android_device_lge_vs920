@@ -1,1 +1,10 @@
 device tree for the lg spectrum 4g on verizon wireless INCOMPLETE AND UNTESTED
+
+to build:
+get the vendor tree i have provided (android_vendor_lge_spectrum)
+. build/envsetup.sh
+lunch cm_spectrum-userdebug
+
+ignore the "Trying dependencies-only mode on a non-existing device tree?" error (if you know how to fix this please contact me)
+
+make -j4
