@@ -14,7 +14,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_CPU_SMP := true
 
-TARGET_BOOTLOADER_BOARD_NAME := spectrum
+TARGET_BOOTLOADER_BOARD_NAME := vs920
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -31,7 +31,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 # Try to build the kernel
 # TARGET_KERNEL_CONFIG := cyanogenmod_iprj_defconfig
 # Keep this as a fallback
-TARGET_PREBUILT_KERNEL := device/lge/spectrum/kernel
+TARGET_PREBUILT_KERNEL := device/lge/vs920/kernel
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
@@ -41,7 +41,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_TOUCH_RECOVERY := true
-BOARD_CUSTOM_GRAPHICS := ../../../device/lge/spectrum/recovery-gfx.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/lge/vs920/recovery-gfx.c
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_USES_MMCUTILS := true
 

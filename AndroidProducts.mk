@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spectrum.mk
+    $(LOCAL_DIR)/vs920.mk
