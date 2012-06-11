@@ -1,16 +1,32 @@
 #      http
 lib/hw/sensors.msm8660.so
 etc/firmware/vidc_1080p.fw
-etc/firmware/BCM4330B1_002.001.003.0243.0308.hcd
 lib/egl/libq3dtools_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 lib/egl/libGLESv1_CM_adreno200.so
+lib/egl/libGLESv2S3D_adreno200.so
 lib/egl/libEGL_adreno200.so
 lib/egl/eglsubAndroid.so
+# MBN/Radio FW Files
+etc/rpm.mbn
+etc/sbl1.mbn
+etc/sbl2.mbn
+etc/sbl3.mbn
+etc/tz.mbn
+etc/firmware/dsps_fluid.b00
+etc/firmware/dsps_fluid.b01
+etc/firmware/dsps_fluid.b02
+etc/firmware/dsps_fluid.b03
+etc/firmware/dsps_fluid.mdt
+etc/firmware/fw_bcmdhd.bin
+etc/firmware/fw_bcmdhd_apsta.bin
+etc/firmware/fw_bcmdhd_mfgtest.bin
+etc/firmware/fw_bcmdhd_p2p.bin
 etc/firmware/yamato_pfp.fw
 etc/firmware/yamato_pm4.fw
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
+bin/BCM4330B14.hcd
 lib/libC2D2.so
 lib/libOpenVG.so
 lib/libgsl.so
@@ -19,7 +35,6 @@ bin/rmt_storage
 bin/qmuxd
 bin/qmiproxy
 bin/netmgrd
-bin/qrngd
 bin/rild
 bin/qcks
 bin/ks
@@ -47,10 +62,8 @@ bin/thermald
 bin/mpdecision
 lib/libthermal_mitigation_fusion.so
 lib/libthermal_mitigation.so
-etc/wl/rtecdc.bin
-etc/wl/rtecdc-apsta.bin
 lib/libaudioalsa.so
-lib/libaudio.so
+lib/libaudio_init.so
 lib/libaudcal.so
 lib/libacdbmapper.so
 lib/libacdbloader.so
