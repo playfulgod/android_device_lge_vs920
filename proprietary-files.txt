@@ -1,5 +1,4 @@
-#      http
-lib/hw/sensors.msm8660.so
+# VS920-4G Proprietary-Files.txt
 etc/firmware/vidc_1080p.fw
 lib/egl/libq3dtools_adreno200.so
 lib/egl/libGLESv2_adreno200.so
@@ -27,6 +26,7 @@ etc/firmware/yamato_pm4.fw
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
 bin/BCM4330B14.hcd
+# End MBN/Radio FW files
 lib/libC2D2.so
 lib/libOpenVG.so
 lib/libgsl.so
@@ -67,7 +67,6 @@ lib/libaudio_init.so
 lib/libaudcal.so
 lib/libacdbmapper.so
 lib/libacdbloader.so
-lib/liba2dp.so
 lib/libmmjps.so
 lib/libmmjpeg.so
 lib/libmmipl.so
@@ -78,6 +77,57 @@ lib/libmmstereo.so
 lib/lib_LG_fastaf_v2.0.so
 lib/libgemini.so
 lib/libchromatix_imx105_preview.so
+# HW Libs
+lib/hw/audio.primary.msm8660.so
+lib/hw/audio_policy.msm8660.so
 lib/hw/camera.msm8660.so
+lib/hw/copybit.msm8660.so
+lib/hw/gralloc.msm8660.so
+lib/hw/hwcomposer.msm8660.so
+lib/hw/lights.msm8660.so
+lib/hw/sensors.msm8660.so
+lib/hw/camera.msm8660.so
+# End HW Libs
 bin/ami304d
 lib/libv8.so
+# kernel modules ##Since we don't have kernel source
+lib/modules/ansi_cprng.ko
+lib/modules/bthid.ko
+lib/modules/cls_flow.ko
+lib/modules/cpaccess.ko
+lib/modules/dal_remotetest.ko
+lib/modules/dma_test.ko
+lib/modules/evbug.ko
+lib/modules/gspca_main.ko
+lib/modules/ksapi.ko
+lib/modules/lcd.ko
+lib/modules/max2165.ko
+lib/modules/mc44s803.ko
+lib/modules/msm-buspm-dev.ko
+lib/modules/msm_tsif.ko
+lib/modules/mt2060.ko
+lib/modules/mt20xx.ko
+lib/modules/mt2131.ko
+lib/modules/mt2266.ko
+lib/modules/mxl5005s.ko
+lib/modules/mxl5007t.ko
+lib/modules/oprofile.ko
+lib/modules/qt1010.ko
+lib/modules/sch_dsmark.ko
+lib/modules/scsi_wait_scan.ko
+lib/modules/spidev.ko
+lib/modules/tda18212.ko
+lib/modules/tda18218.ko
+lib/modules/tda18271.ko
+lib/modules/tda827x.ko
+lib/modules/tda8290.ko
+lib/modules/tda9887.ko
+lib/modules/tea5761.ko
+lib/modules/tea5767.ko
+lib/modules/tsif_chrdev.ko
+lib/modules/tuner-simple.ko
+lib/modules/tuner-types.ko
+lib/modules/tuner-xc2028.ko
+lib/modules/vpnclient.ko
+lib/modules/xc5000.ko
+# End Kernel Modules
