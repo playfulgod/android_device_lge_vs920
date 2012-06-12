@@ -1,1 +1,1 @@
-add_lunch_combo spectrum-eng
+add_lunch_combo vs920-eng
