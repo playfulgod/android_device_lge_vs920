@@ -39,7 +39,7 @@ LOCAL_STATIC_LIBRARIES := \
     libmedia_helper
 
 LOCAL_WHOLE_STATIC_LIBRARIES := \
-    libaudiopolicy_spectrum
+    libaudiopolicy_vs920
 
 ## Should be vs920, but that conflicts with the CM policy wrapper
 LOCAL_MODULE := audio_policy.msm8660
