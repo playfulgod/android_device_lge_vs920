@@ -23,8 +23,10 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.lge.rc:root/init.lge.rc \
-    $(LOCAL_PATH)/ueventd.lge.rc:root/ueventd.lge.rc
+    $(LOCAL_PATH)/init.rc:root/init..rc \
+    $(LOCAL_PATH)/ueventd.rc:root/ueventd.rc \
+	$(LOCAL_PATH)/init.target.rc:root/init.target.rc \
+	$(LOCAL_PATH)/init.qcom.rc:root/init.qcom.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.lge.usb.rc:root/init.lge.usb.rc \
