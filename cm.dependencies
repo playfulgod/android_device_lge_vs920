@@ -1,7 +1,0 @@
-[
- {
-   "repository": "lge-kernel-iprj",
-   "target_path": "kernel/lge/vs920",
-   "branch": "android-msm-2.6.35"
- }
-]
