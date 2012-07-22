@@ -40,8 +40,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 2004621312
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_TOUCH_RECOVERY := true
 ## Compiler seems to disike this.... commenting out for now
+#BOARD_TOUCH_RECOVERY := true
 # BOARD_CUSTOM_GRAPHICS := ../../../device/lge/vs920/recovery-gfx.c
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_USES_MMCUTILS := true
