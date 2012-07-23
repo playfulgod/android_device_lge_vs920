@@ -93,3 +93,5 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := vs920
 # AMSS version to use for GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
+# Give us some basic touch screen functionality in case we get this booting...
+BOARD_USE_LEGACY_TOUCHSCREEN := true
