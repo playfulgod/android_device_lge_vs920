@@ -95,9 +95,10 @@ on boot
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
     # Remove write permissions to video related nodes
-    chmod 0664 /sys/devices/virtual/graphics/fb1/hpd
-    chmod 0664 /sys/devices/virtual/graphics/fb1/video_mode
-    chmod 0664 /sys/devices/virtual/graphics/fb1/format_3d
+	# Add write perms for debug --death2all110
+    chmod 0666 /sys/devices/virtual/graphics/fb1/hpd
+    chmod 0666 /sys/devices/virtual/graphics/fb1/video_mode
+    chmod 0666 /sys/devices/virtual/graphics/fb1/format_3d
 
     # Change owner and group for media server and surface flinger
     chown media system /sys/devices/virtual/graphics/fb1/format_3d
@@ -365,7 +366,7 @@ service atfwd /system/bin/ATFWD-daemon
 service hdmid /system/bin/hdmid
     user system
     group system graphics
-    socket hdmid stream 0660 system system graphics
+    socket hdmid stream 0666 system system graphics
     disabled
 
 on property:ro.hdmi.enable=true

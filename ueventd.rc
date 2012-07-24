@@ -36,13 +36,17 @@
 /dev/alarm                0664   system     radio
 /dev/tty0                 0660   root       system
 /dev/sdio_tty_ciq_00      0660   system     system
-/dev/graphics/*           0660   system     graphics
+# make world writeable to debug FB
+/dev/graphics/*           0666   system     graphics
+# End perm change
 /dev/msm_hw3dm            0660   system     graphics
 /dev/msm_rotator          0660   system     graphics
 /dev/input/*              0660   system     input
 /dev/eac                  0660   root       audio
 /dev/cam                  0660   root       camera
-/dev/pmem                 0660   system     graphics
+# again make world writeable
+/dev/pmem                 0666   system     graphics
+# end perm change
 /dev/pmem_audio           0660   system     audio
 /dev/msm_mvs              0660   system     audio
 /dev/pmem_adsp*           0660   system     audio
