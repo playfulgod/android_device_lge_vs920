@@ -266,6 +266,10 @@ on post-fs
     chown system system /data/dalvik-cache
     chmod 0771 /data/dalvik-cache
 
+	mkdir /cache/dalvik-cache 0771 system system
+	chown system system /cache/dalvik-cache
+	chmod 0771 /cache/dalvik-cache
+	
     # create the lost+found directories, so as to enforce our permissions
     mkdir /data/lost+found 0770
     mkdir /cache/lost+found 0770
@@ -321,10 +325,6 @@ on post-fs
     mkdir /cache/fota 0777
     chown system system /cache/fota
     chmod 0777 /cache/fota
-	
-	mkdir /cache/dalvik-cache 0774
-	chown system cache /cache/dalvik-cache
-	chmod 0774
 
     chmod 0666 /data/fota/silence.txt
 # LGE_FOTA end
@@ -668,7 +668,7 @@ service ril-daemon /system/bin/rild
 
 # This is for stace and surface flinger 
 ## death2all110
-## service surfaceflinger /system/xbin/strace -f -tt -s 200 -o /data/trace/surfaceflinger.strace /system/bin/surfaceflinger
+service surfaceflinger /system/xbin/strace -ff -F -tt -s 200 -o /data/trace/surfaceflinger.pid /system/bin/surfaceflinger
 
 #if defined(ANDY_LGDRM)
 ## ANDY_PORTING LGDRM [lg-drm@lge.com 100401]
