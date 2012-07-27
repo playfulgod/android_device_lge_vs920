@@ -27,6 +27,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ueventd.rc:root/ueventd.rc \
 	$(LOCAL_PATH)/init.target.rc:root/init.target.rc \
 	$(LOCAL_PATH)/init.qcom.rc:root/init.qcom.rc
+
 # Init Scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.lge.usb.rc:root/init.lge.usb.rc \
