@@ -21,13 +21,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml
 
 $(call inherit-product, build/target/product/full.mk)
-
+# Inits
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.rc:root/init.rc \
     $(LOCAL_PATH)/ueventd.rc:root/ueventd.rc \
 	$(LOCAL_PATH)/init.target.rc:root/init.target.rc \
 	$(LOCAL_PATH)/init.qcom.rc:root/init.qcom.rc
-
+# Init Scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.lge.usb.rc:root/init.lge.usb.rc \
     $(LOCAL_PATH)/prebuilt/boot_logo_00000.rle:root/bootimages/boot_logo_00000.rle \
@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
     $(LOCAL_PATH)/prebuilt/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh
 
-## Configs
+# Configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/atcmd_virtual_kbd.kl:system/usr/keylayout/atcmd_virtual_kbd.kl \
     $(LOCAL_PATH)/config/ffa-keypad_qwerty.kl:system/usr/keylayout/ffa-keypad_qwerty.kl \
@@ -69,7 +69,6 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
 # HW HALS
-
 PRODUCT_PACKAGES += \
     hdmid \
     libgenlock \
@@ -82,11 +81,10 @@ PRODUCT_PACKAGES += \
     gps.vs920 \
     audio.primary.msm8660 \
     audio_policy.msm8660 \
-    audio.a2dp.default
+    audio.a2dp.default \
 	com.android.future.usb.accessory
 
 # OMX
-#
 PRODUCT_PACKAGES += \
     libstagefrighthw \
     libdivxdrmdecrypt \
@@ -110,6 +108,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger \
     charger_res_images
+
 # Build.prop overrides	
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
