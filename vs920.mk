@@ -21,9 +21,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml
 
 $(call inherit-product, build/target/product/full.mk)
+
 # Inits
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.rc:root/init.rc \
     $(LOCAL_PATH)/ueventd.rc:root/ueventd.rc \
 	$(LOCAL_PATH)/init.target.rc:root/init.target.rc \
 	$(LOCAL_PATH)/init.qcom.rc:root/init.qcom.rc
