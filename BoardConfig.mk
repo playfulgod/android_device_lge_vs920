@@ -26,12 +26,11 @@ BOARD_HAS_NO_MISC_PARTITION := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_USES_MMCUTILS := true
 
-TARGET_PREBUILT_KERNEL := device/lge/vs920/kernel
-BOARD_TOUCH_RECOVERY := true
-BOARD_CUSTOM_GRAPHICS := ../../../device/lge/vs920/recovery/graphics.c
-
-# UMS
-BOARD_UMS_LUNFILE := /sys/devices/platform/usb_mass_storage/lun0/file
-
 BOARD_HAS_NO_SELECT_BUTTON := true
+#BOARD_TOUCH_RECOVERY := true
+BOARD_CUSTOM_GRAPHICS := ../../../device/lge/vs920/recovery/recovery-gfx.c
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_USES_MMCUTILS := true
+
 
